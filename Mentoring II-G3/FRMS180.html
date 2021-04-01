@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+			<meta name= "viewport" content ="width=device-width, initial-scale=1.0">
+			<meta charset="UTF8">
+		    <title>Fr= F1-F2-...-FN
+			</title>
+
+			<style>
+				.cabecalho{
+					background-color:yellow;
+				}
+			
+				.titulo{
+					margin: 0 auto;
+					width: 30%;
+					text-align: center;
+					font-size: 40px;
+					font-family: Jazz LET, fantasy;
+					padding-top: 10px;
+					padding-bottom: 20px;
+				}
+
+				.programa{
+					margin-top:5px;
+					border-style:solid;
+					display: inline-block;
+					color: yellow;
+					font-family: helvetica;
+					text-align: center;
+					width: 100%;
+				}
+				.formulas{
+					margin-top:5px;
+					border-style:solid;
+					display: inline-block;
+					color: yellow;
+					font-family: helvetica;
+					text-align: center;
+					width: 100%;
+				}
+				.formulas:hover{
+						background-color: black;
+						color: white;
+				}
+				a:link {
+						display: inline-block;
+						color: yellow;
+						font-family: helvetica;
+						text-align: left;
+						width: 100%;
+						text-decoration:none;
+						text-align: center;
+				}
+
+				a:hover {
+					 color: white;
+				}
+				a:visited {
+					color: yellow;
+				}
+				.rodape{
+				   display: inline-block;
+				   margin-left: 200px;
+                   margin-right: 200px;     
+				}
+				.caixas{
+					color: yellow;
+					background-color: black; 
+				}
+
+
+			</style>
+			<script>
+		var qtd=0;
+		function adiciona(){
+			qtd++;
+			var d = document.getElementById("caixas");
+			var i1 = document.createElement("input");
+			i1.setAttribute("id", "valor"+qtd);
+			d.appendChild(i1);
+			alert("Você adicionou uma força!");
+		}
+		function somaTodos(){
+			var i;
+			var sub=0;
+			for(i=1;i<=qtd;i++){
+				sub=sub-parseInt(document.getElementById("valor"+i).value);
+			}
+			alert(sub);
+		}
+	</script>
+	</head>
+  <body>
+		<body bgcolor="black">
+		<div class="cabecalho">
+			<div class="titulo">
+				2ºLei de Newton (princípio fundamental da dinâmica)
+			</div>
+		</div>
+		<div class="programa">
+			<h2>"A subtração das forças que atuam sobre um corpo resultam na força resultante."</h2>
+		</div>
+		
+		<div class="formulas">
+			 <h3>Força resultante na mesma direção em sentidos contrários
+				<p>F1-F2 = FR= m x a
+				<p>Fr= Força resultante(N)
+				<p>F1= Primeira Força
+				<p>F2= Segunda Força 
+				<p>m= Massa do corpo(Kg)
+				<p>a= aceleração (m/s²)
+			
+			 <div>
+	<button onclick="adiciona()">Adicionar força</button>
+	<br>
+	<br>
+	<br>
+	<div  id="caixas">
+	
+	</div>
+	<button onclick="somaTodos()">Resultado</button>
+	<br>
+			 </div>
+			 <br>
+			 <br> <h4><a href="FISICA.html" >VOLTAR Á PAGINA INICIAL</a><h4>
+		</div>
+		<div class="rodape">
+		   <a href="https://www.pucminas.br/main/Paginas/default.aspx"><img class="rodape" src = "pucminas.jpg"  width="200" height="150"></a>
+		   <a href="http://cepoc.com.br/"><img class="rodape" src = "cepoc.jpg.png"  width="200" height="100"></a>
+		</div> 
+		
+	</body>
+
+</html>

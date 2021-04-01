@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF8">
+	<title>Força angular
+	</title>
+
+	<style>
+		.formatacao {
+			background-color: black;
+			color: yellow
+		}
+
+		.cabecalho {
+			background-color: yellow;
+		}
+
+		.titulo {
+			margin: 0 auto;
+			width: 30%;
+			text-align: center;
+			font-size: 60px;
+			font-family: Jazz LET, fantasy;
+			padding-top: 10px;
+			padding-bottom: 20px;
+
+		}
+
+		.programa {
+			margin-top: 5px;
+			border-style: solid;
+			display: inline-block;
+			color: yellow;
+			font-family: helvetica;
+			text-align: center;
+			width: 100%;
+		}
+
+		.formulas {
+			margin-top: 5px;
+			border-style: solid;
+			display: inline-block;
+			color: yellow;
+			font-family: helvetica;
+			text-align: center;
+			width: 100%;
+		}
+
+		.formulas:hover {
+			background-color: black;
+			color: white;
+		}
+		a:link {
+				display: inline-block;
+				color: yellow;
+				font-family: helvetica;
+				text-align: left;
+				width: 100%;
+				text-decoration:none;
+				text-align: center;
+
+		}
+
+		a:hover {
+				color: white;
+					 
+		}
+		a:visited {
+				color: yellow;
+		}
+		
+	</style>
+	<script>
+		function calcular() {
+			var f1 = parseFloat(document.getElementById("forca1").value);
+			var f2 = parseFloat(document.getElementById("forca2").value);
+			var Angulo = parseFloat(document.getElementById("Angulo").value);
+			var radiano = (Angulo) * Math.PI / 180;
+			var cosA = Math.cos(radiano);
+			var forcaResultante = Math.sqrt((f1 * f1) + (f2 * f2) + 2 * f1 * f2 * cosA);
+			document.getElementById("resultado").value = forcaResultante;
+		}
+	</script>
+</head>
+
+<body>
+
+	<body bgcolor="black">
+		<div class="cabecalho">
+			<div class="titulo">
+				Regra do Paralelogramo
+			</div>
+		</div>
+		<div class="programa">
+			<h2>"Os paralelogramos são polígonos de quatro lados opostos congruentes 
+			(que possuem a mesma medida), por exemplo, o quadrado, o losango e o retângulo."</h2>
+		</div>
+		<div class="formulas">
+			<div>
+				<h3> Força resultante em diferentes ângulos
+				<p>Fr= Força resultante(N)
+				<p>F1²= Primeira Força ao quadrado
+				<p>F2²= Segunda Força ao quadrado
+				<p>m= Massa do corpo(Kg)
+				<p>a= aceleração (m/s²)
+				<p>&#8730;F1²+&#8730;F2²= m x a
+				<p>
+			    F1<input class="formatacao" id="forca1">
+				F2<input class="formatacao" id="forca2">
+				Angulo<input class="formatacao" id="Angulo">
+				<button class="formatacao" onclick="calcular()">=</button>
+				<input class="formatacao" id="resultado">m/s²
+				</h3>
+				<br>
+			</div>
+			<br>
+			<br> 
+			<h4><a href="FISICA.html">VOLTAR Á PAGINA INICIAL</a><h4>
+		<br>
+		<br>
+		</div>
+
+		<div class="rodape">
+		   <a href="https://www.pucminas.br/main/Paginas/default.aspx"><img class="rodape" src = "pucminas.jpg"  width="200" height="150"></a>
+		   <a href="http://cepoc.com.br/"><img class="rodape" src = "cepoc.jpg.png"  width="200" height="100"></a>
+		</div> 
+
+	</body>
+
+</html>

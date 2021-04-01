@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+			<meta name= "viewport" content ="width=device-width, initial-scale=1.0">
+			<meta charset="UTF8">
+		    <title>(m x a)
+			</title>
+
+			<style>
+				.cabecalho{
+					background-color:yellow;
+				}
+				.titulo{
+					margin: 0 auto;
+					width: 30%;
+					text-align: center;
+					font-size: 40px;
+					font-family: Jazz LET, fantasy;
+					padding-top: 10px;
+					padding-bottom: 20px;
+
+				}
+
+				.programa{
+					margin-top:5px;
+					border-style:solid;
+					display: inline-block;
+					color: yellow;
+					font-family: helvetica;
+					text-align: center;
+					width: 100%;
+				}
+				.formulas{
+					margin-top:5px;
+					border-style:solid;
+					display: inline-block;
+					color: yellow;
+					font-family: helvetica;
+					text-align: center;
+					width: 100%;
+					padding-top: 10px;
+					padding-bottom: 20px;
+				}
+				.formulas:hover{
+						background-color: black;
+						color: white;
+				}
+				a:link {
+						
+						display: inline-block;
+						color: yellow;
+						font-family: helvetica;
+						text-align: left;
+						width: 100%;
+						text-decoration:none;
+						text-align: center;
+
+				}
+
+				a:hover {
+					 color: white;
+					 
+				}
+				a:visited {
+					color: yellow;
+				}
+
+
+			</style>
+			<script>
+				function calcular(){
+				var f1 = parseFloat(document.getElementById("forca1").value);
+				var f2 = parseFloat(document.getElementById("forca2").value);
+				var multiplicacao = f1 * f2;
+				document.getElementById("resultado").value=multiplicacao;
+				}
+</script>
+	</head>
+
+	<body>
+		<body bgcolor="black">
+		<div class="cabecalho">
+			<div class="titulo">
+				2ºLei de Newton (princípio fundamental da dinâmica)
+			</div>
+		</div>
+		<div class="programa">
+			<h3>“A força resultante que atua sobre um corpo é proporcional ao produto da massa pela aceleração por ele adquirida.”</h3>
+		</div>
+		<div class="formulas">
+				<h3>Força resultante
+				<p>Fr-Força resultante(N)
+				<p>m= Massa (Kg) 
+				<p>a= Aceleração(M/s²)
+				<p>Fr= m x a
+				<br>
+				<br>
+				Força resultante mesma direção e sentido: Fr=
+				m<input style="background-color:black;color:yellow"  id="forca1">
+				a<input style="background-color:black;color:yellow" id="forca2">
+				 <button style="background-color:black;color:yellow"  onclick="calcular()">=</button> 
+				<input style="background-color:black;color:yellow" id="resultado">m/s²</h3>
+				<br>
+			 <br> <br> <h4><a href="FISICA.html" >VOLTAR Á PAGINA INICIAL</a></h4>				
+			 </div>
+			 <br>
+			 
+			 <br>
+			 <br>
+		</div>
+		<br>
+		<br>
+		<div class="rodape">
+		   <a href="https://www.pucminas.br/main/Paginas/default.aspx"><img class="rodape" src = "pucminas.jpg"  width="200" height="150"></a>
+		   <a href="http://cepoc.com.br/"><img class="rodape" src = "cepoc.jpg.png"  width="200" height="100"></a>
+		</div> 
+	</body>
+
+</html>
